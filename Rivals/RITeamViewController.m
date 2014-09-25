@@ -16,15 +16,21 @@
 
 - (id)init {
     self = [super init];
-    
     self.title = @"BYU";
-
     return self;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.view.backgroundColor = [UIColor blueColor];
+    
+    UILabel *taglineLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 250, self.view.frame.size.width, 50)];
+    taglineLabel.text = @"Rise and Roar";
+    taglineLabel.textAlignment = NSTextAlignmentCenter;
+    taglineLabel.textColor = [UIColor whiteColor];
+    [self.view addSubview:taglineLabel];
 }
 
 - (void)didReceiveMemoryWarning {
