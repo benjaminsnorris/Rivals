@@ -33,6 +33,12 @@
     [self.view addSubview:taglineLabel];
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
+    self.tabBarController.tabBar.tintColor = [UIColor blueColor];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
