@@ -31,7 +31,6 @@
     taglineLabel.textAlignment = NSTextAlignmentCenter;
     taglineLabel.textColor = [UIColor whiteColor];
     [self.view addSubview:taglineLabel];
-
 }
 
 - (void)didReceiveMemoryWarning {

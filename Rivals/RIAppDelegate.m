@@ -18,11 +18,15 @@
     // Override point for customization after application launch.
     
     RITeamViewController *teamViewController = [RITeamViewController new];
+    teamViewController.tabBarItem.image = [UIImage imageNamed:@"BYU"];
     RIRivalViewController *rivalViewController = [RIRivalViewController new];
+    rivalViewController.tabBarItem.image = [UIImage imageNamed:@"UTAH"];
     
     UITabBarController *tabBarController = [UITabBarController new];
     tabBarController.viewControllers = @[teamViewController, rivalViewController];
     
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent animated:YES];
+        
     self.window.rootViewController = tabBarController;
     
     self.window.backgroundColor = [UIColor whiteColor];
