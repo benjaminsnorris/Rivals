@@ -19,6 +19,8 @@
 		713E0855193E77E9006CA563 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 713E083D193E77E9006CA563 /* UIKit.framework */; };
 		713E085D193E77E9006CA563 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 713E085B193E77E9006CA563 /* InfoPlist.strings */; };
 		713E085F193E77E9006CA563 /* RivalsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 713E085E193E77E9006CA563 /* RivalsTests.m */; };
+		E7F593D719D398C80046472B /* RITeamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7F593D619D398C80046472B /* RITeamViewController.m */; };
+		E7F593DA19D398F30046472B /* RIRivalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7F593D919D398F30046472B /* RIRivalViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,10 @@
 		713E085A193E77E9006CA563 /* RivalsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RivalsTests-Info.plist"; sourceTree = "<group>"; };
 		713E085C193E77E9006CA563 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		713E085E193E77E9006CA563 /* RivalsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RivalsTests.m; sourceTree = "<group>"; };
+		E7F593D519D398C80046472B /* RITeamViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RITeamViewController.h; sourceTree = "<group>"; };
+		E7F593D619D398C80046472B /* RITeamViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RITeamViewController.m; sourceTree = "<group>"; };
+		E7F593D819D398F30046472B /* RIRivalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RIRivalViewController.h; sourceTree = "<group>"; };
+		E7F593D919D398F30046472B /* RIRivalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RIRivalViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +115,10 @@
 			children = (
 				713E0848193E77E9006CA563 /* RIAppDelegate.h */,
 				713E0849193E77E9006CA563 /* RIAppDelegate.m */,
+				E7F593D519D398C80046472B /* RITeamViewController.h */,
+				E7F593D619D398C80046472B /* RITeamViewController.m */,
+				E7F593D819D398F30046472B /* RIRivalViewController.h */,
+				E7F593D919D398F30046472B /* RIRivalViewController.m */,
 				713E084B193E77E9006CA563 /* Images.xcassets */,
 				713E0840193E77E9006CA563 /* Supporting Files */,
 			);
@@ -241,6 +251,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				713E0846193E77E9006CA563 /* main.m in Sources */,
+				E7F593D719D398C80046472B /* RITeamViewController.m in Sources */,
+				E7F593DA19D398F30046472B /* RIRivalViewController.m in Sources */,
 				713E084A193E77E9006CA563 /* RIAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -438,6 +450,7 @@
 				713E0864193E77E9006CA563 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		713E0865193E77E9006CA563 /* Build configuration list for PBXNativeTarget "RivalsTests" */ = {
 			isa = XCConfigurationList;
@@ -446,6 +459,7 @@
 				713E0867193E77E9006CA563 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

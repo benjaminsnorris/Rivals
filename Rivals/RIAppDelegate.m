@@ -7,6 +7,8 @@
 //
 
 #import "RIAppDelegate.h"
+#import "RITeamViewController.h"
+#import "RIRivalViewController.h"
 
 @implementation RIAppDelegate
 
@@ -14,6 +16,15 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    
+    RITeamViewController *teamViewController = [RITeamViewController new];
+    RIRivalViewController *rivalViewController = [RIRivalViewController new];
+    
+    UITabBarController *tabBarController = [UITabBarController new];
+    tabBarController.viewControllers = @[teamViewController, rivalViewController];
+    
+    self.window.rootViewController = tabBarController;
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
